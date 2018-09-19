@@ -98,6 +98,7 @@ public class Complex {
      * Division operation.
      * @param b divider
      * @return this Complex object whose value is this / b
+     * @author Nikolay Dik
      */
     public Complex div(Complex b) {
         Complex a = this;
@@ -113,9 +114,10 @@ public class Complex {
     }
 
     /**
-     * Sub operation.
+     * Subtraction operation.
      * @param b subtrahend
      * @return this Complex object whose value is (this - b)
+     * @author Nikolay Dik
      */
     public Complex sub(Complex b) {
         re -= b.re;
@@ -123,10 +125,20 @@ public class Complex {
         return this;
     }
 
+    /**
+     * Get operation for Real value.
+     * @return Real part of the Complex
+     * @author Nikolay Dik
+     */
     public double getReal() {
         return re;
     }
 
+    /**
+     * Get operation for Imaginary value.
+     * @return Imaginary part of the Complex
+     * @author Nikolay Dik
+     */
     public double getImag() {
         return im;
     }

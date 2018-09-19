@@ -4,8 +4,19 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * A class used for testing Complex class methods of Division and Subtraction
+ * @author Nikolay Dik
+ */
 class ComplexTest {
 
+    /**
+     * Division operation simple test for Real part.
+     * @arrange Any Complex numbers a and b
+     * @act a / b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divReal() {
         // Arrange
@@ -19,6 +30,13 @@ class ComplexTest {
         assertEquals(1.0, result.getReal(), 0.1);
     }
 
+    /**
+     * Division operation simple test for Imaginary part.
+     * @arrange Any Complex numbers a and b
+     * @act a / b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divImag() {
         // Arrange
@@ -32,6 +50,13 @@ class ComplexTest {
         assertEquals(0.0, result.getImag(), 0.1);
     }
 
+    /**
+     * Division operation test for Real part with negative params.
+     * @arrange Any Complex numbers a and b with negative params
+     * @act a / b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divNegReal() {
         // Arrange
@@ -45,6 +70,13 @@ class ComplexTest {
         assertEquals(1.0, result.getReal(), 0.1);
     }
 
+    /**
+     * Division operation test for Imaginary part with negative params.
+     * @arrange Any Complex numbers a and b with negative params
+     * @act a / b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divNegImag() {
         // Arrange
@@ -58,6 +90,13 @@ class ComplexTest {
         assertEquals(1.0, result.getImag(), 0.1);
     }
 
+    /**
+     * Division operation test for Real part with zero params.
+     * @arrange Any Complex numbers a and b with zero params
+     * @act a / b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divZeroReal() {
         // Arrange
@@ -71,6 +110,13 @@ class ComplexTest {
         assertEquals(0.0, result.getReal(), 0.1);
     }
 
+    /**
+     * Division operation test for Imaginary part with zero params.
+     * @arrange Any Complex numbers a and b with zero params
+     * @act a / b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divZeroImag() {
         // Arrange
@@ -84,6 +130,13 @@ class ComplexTest {
         assertEquals(4.0, result.getImag(), 0.1);
     }
 
+    /**
+     * Division operation test for Real part with division by zero Complex.
+     * @arrange Any Complex number a and zero Complex b
+     * @act a / b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divZeroZeroReal() {
         // Arrange
@@ -97,6 +150,13 @@ class ComplexTest {
         assertEquals(Double.POSITIVE_INFINITY, result.getReal(), 0.1);
     }
 
+    /**
+     * Division operation test for Imaginary part with division by zero Complex.
+     * @arrange Any Complex number a and zero Complex b
+     * @act a / b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divZeroZeroImag() {
         // Arrange
@@ -110,6 +170,13 @@ class ComplexTest {
         assertEquals(Double.NEGATIVE_INFINITY, result.getImag(), 0.1);
     }
 
+    /**
+     * Division operation test for Real part with division by Positive and Negative Infinities.
+     * @arrange Any Complex numbers a and b with infinity params
+     * @act a / b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divINFReal() {
         // Arrange
@@ -123,6 +190,13 @@ class ComplexTest {
         assertEquals(Double.NaN, result.getReal(), 0.1);
     }
 
+    /**
+     * Division operation test for Imaginary part with division by Positive and Negative Infinities.
+     * @arrange Any Complex numbers a and b with infinity params
+     * @act a / b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void divINFImag() {
         // Arrange
@@ -136,6 +210,13 @@ class ComplexTest {
         assertEquals(Double.NaN, result.getImag(), 0.1);
     }
 
+    /**
+     * Subtraction operation simple test for Real part.
+     * @arrange Any Complex numbers a and b
+     * @act a - b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subReal() {
         // Arrange
@@ -149,6 +230,13 @@ class ComplexTest {
         assertEquals(1.0, result.getReal(), 0.1);
     }
 
+    /**
+     * Subtraction operation simple test for Imaginary part.
+     * @arrange Any Complex numbers a and b
+     * @act a - b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subImag() {
         // Arrange
@@ -162,6 +250,13 @@ class ComplexTest {
         assertEquals(3.0, result.getImag(), 0.1);
     }
 
+    /**
+     * Subtraction operation test for Real part with Negative params.
+     * @arrange Any Complex numbers a and b with Negative params
+     * @act a - b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subNegReal() {
         // Arrange
@@ -175,6 +270,13 @@ class ComplexTest {
         assertEquals(3.0, result.getReal(), 0.1);
     }
 
+    /**
+     * Subtraction operation test for Imaginary part with Negative params.
+     * @arrange Any Complex numbers a and b with Negative params
+     * @act a - b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subNegImag() {
         // Arrange
@@ -188,6 +290,13 @@ class ComplexTest {
         assertEquals(-1.0, result.getImag(), 0.1);
     }
 
+    /**
+     * Subtraction operation test for Real part with zero params.
+     * @arrange Any Complex numbers a and b with zero params
+     * @act a - b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subZeroReal() {
         // Arrange
@@ -201,6 +310,13 @@ class ComplexTest {
         assertEquals(2.0, result.getReal(), 0.1);
     }
 
+    /**
+     * Subtraction operation test for Imaginary part with zero params.
+     * @arrange Any Complex numbers a and b with zero params
+     * @act a - b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subZeroImag() {
         // Arrange
@@ -214,6 +330,13 @@ class ComplexTest {
         assertEquals(-1.0, result.getImag(), 0.1);
     }
 
+    /**
+     * Subtraction operation test for Real part with Infinity params.
+     * @arrange Any Complex numbers a and b with Infinity params
+     * @act a - b
+     * @assert Checks Real part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subINFReal() {
         // Arrange
@@ -227,6 +350,13 @@ class ComplexTest {
         assertEquals(Double.NEGATIVE_INFINITY, result.getReal(), 0.1);
     }
 
+    /**
+     * Subtraction operation test for Imaginary part with Infinity params.
+     * @arrange Any Complex numbers a and b with Infinity params
+     * @act a - b
+     * @assert Checks Imaginary part of Complex
+     * @author Nikolay Dik
+     */
     @Test
     void subINFImag() {
         // Arrange
